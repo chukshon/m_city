@@ -1,7 +1,6 @@
 import React from 'react'
 import { Wrapper } from './style'
 import { Link, NavLink } from 'react-router-dom'
-
 import manchester_city_logo from '../../assets/logos/manchester_city_logo.png'
 
 const Header = () => {
