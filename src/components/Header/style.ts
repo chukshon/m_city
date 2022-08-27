@@ -2,6 +2,11 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   background-color: var(--blue-2);
+  border-bottom: 2px solid var(--blue-1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   .container {
     display: flex;
     justify-content: space-between;
