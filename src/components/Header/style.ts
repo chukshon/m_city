@@ -30,5 +30,6 @@ export const Wrapper = styled.div`
   .nav_link {
     background-color: none;
     cursor: pointer;
+    font-family: var(--ff-2);
   }
 `

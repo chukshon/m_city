@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   .date {
     margin-bottom: 20px;
     color: var(--white);
+    font-family: var(--ff-2);
   }
   .result {
     display: flex;
