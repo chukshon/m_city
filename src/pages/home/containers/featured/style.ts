@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   background-color: var(--blue-1);
-  height: 480px;
+  height: 470px;
   margin-top: -40px;
   overflow: hidden;
   position: relative;
