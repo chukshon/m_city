@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   background-color: var(--blue-1);
-  height: 400px;
+  height: 480px;
   margin-top: -40px;
   overflow: hidden;
   position: relative;
@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
 `
 
 export const ContainerStyled = styled.div`
+  overflow: hidden;
+  height: 460px;
   @media (min-width: 1100px) {
     max-width: 1300px;
     overflow: hidden;
@@ -34,7 +36,7 @@ export const StripesStyled = styled.div`
 
 export const StripeStyled = styled.div`
   width: 90px;
-  height: 500px;
+  height: 520px;
   background-color: var(--blue-2);
   transform: rotate(25deg);
   &:nth-child(2) {
@@ -49,7 +51,7 @@ export const StripeStyled = styled.div`
 
 export const TextStyled = styled.div`
   position: absolute;
-  top: 30%;
+  top: 35%;
   font-family: var(--ff-2);
   display: flex;
   flex-direction: column;
