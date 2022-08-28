@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
     height: 60px;
   }
   .copyright {
+    font-family: var(--ff-2);
     color: white;
   }
 `
