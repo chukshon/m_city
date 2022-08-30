@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div``
 
 export const Container = styled.div`
-  padding: 50px 30px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,10 +27,9 @@ export const TopSection = styled.div`
     height: 300px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: var(--ff-2);
     color: var(--blue-3);
-    max-width: 1000px;
   }
   @media (min-width: 700px) {
     flex-direction: row;
