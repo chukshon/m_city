@@ -17,7 +17,7 @@ export const Container = styled.div`
   h1 {
     color: var(--blue-3);
     font-family: var(--ff-2);
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 60px 0px;
   }
 

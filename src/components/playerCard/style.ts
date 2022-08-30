@@ -41,6 +41,7 @@ export const PlayerDetails = styled.div`
     font-size: 1.5rem;
     max-width: 50px;
     z-index: 11;
+    color: var(--blue-1);
   }
   @media (min-width: 700px) {
     h2 {
