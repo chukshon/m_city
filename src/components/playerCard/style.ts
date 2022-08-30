@@ -40,5 +40,13 @@ export const PlayerDetails = styled.div`
     font-family: var(--ff-2);
     font-size: 1.5rem;
     max-width: 50px;
+    z-index: 11;
+  }
+  @media (min-width: 700px) {
+    h2 {
+      z-index: 10;
+      font-size: 10rem;
+      line-height: 120px;
+    }
   }
 `

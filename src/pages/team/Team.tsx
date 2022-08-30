@@ -12,7 +12,24 @@ const Team = () => {
           <PlayerCard />
           <PlayerCard />
         </CategoryGrid>
-        <h1>Defenders</h1>
+        <h1>Defence</h1>
+        <CategoryGrid>
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+        </CategoryGrid>
+        <h1>Midfield</h1>
+        <CategoryGrid>
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+        </CategoryGrid>
+        <h1>Strikers</h1>
         <CategoryGrid>
           <PlayerCard />
           <PlayerCard />
