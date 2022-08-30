@@ -6,7 +6,6 @@ export const ButtonStyled = styled.button`
   padding: 10px 10px;
   font-family: var(--ff-2);
   transition: ease 0.3s;
-  width: 100%;
 
   &:hover {
     background-color: var(--blue-1);
@@ -14,6 +13,6 @@ export const ButtonStyled = styled.button`
   }
 
   @media (min-width: 700px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `
