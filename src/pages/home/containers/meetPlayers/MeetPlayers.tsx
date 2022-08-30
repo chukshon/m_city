@@ -1,19 +1,20 @@
-import React from 'react'
-import { Wrapper, Container, LeftCol, PlayerCard } from './style'
+import PlayerCards from '../../../../components/playerCards/PlayerCards'
+import Test from '../../../../components/Test'
+
+import { Wrapper, Container, LeftCol, RightCol } from './style'
 
 const MeetPlayers = () => {
   return (
     <Wrapper>
       <Container>
         <LeftCol>
-          <PlayerCard>
-            <div className='image'></div>
-            <div className='content'>
-              <h1>30</h1>
-              <h3>Nicholas Otamendi</h3>
-            </div>
-          </PlayerCard>
+          <PlayerCards />
         </LeftCol>
+        <RightCol>
+          <h2>Meet</h2>
+          <h2>The</h2>
+          <h2>Players</h2>
+        </RightCol>
       </Container>
     </Wrapper>
   )
