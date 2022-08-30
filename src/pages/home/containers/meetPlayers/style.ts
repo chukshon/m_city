@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.div`
-  padding: 0px 20px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@ export const RightCol = styled.div`
   /* display: flex;
   justify-content: center;
   flex-wrap: wrap; */
-  width: 30%;
+  width: 50%;
   @media (max-width: 600px) {
     h2 {
       display: none;

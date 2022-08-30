@@ -50,7 +50,7 @@ export const PlayerImage = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--blue-4);
-  max-width: 300px;
+  max-width: 200px;
   padding: 0px 20px;
   @media (min-width: 800px) {
     max-width: 600px;

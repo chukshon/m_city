@@ -6,7 +6,6 @@ export const ButtonStyled = styled.button`
   padding: 10px 10px;
   font-family: var(--ff-2);
   transition: ease 0.3s;
-
   &:hover {
     background-color: var(--blue-1);
     color: var(--white);
