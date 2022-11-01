@@ -28,7 +28,7 @@ const LoginInput = ({
         value={value}
         onChange={handleChange}
       />
-      <p>This {name} is Required</p>
+      {/* <p>This {name} is Required</p> */}
     </InputWrapper>
   )
 }
