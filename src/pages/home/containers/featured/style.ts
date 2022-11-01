@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   background-color: var(--blue-1);
@@ -31,6 +31,7 @@ export const StripesStyled = styled.div`
     display: flex;
     justify-content: center;
     gap: 40px;
+    overflow: hidden;
   }
 `
 
@@ -46,6 +47,7 @@ export const StripeStyled = styled.div`
   @media (min-width: 1100px) {
     width: 250px;
     height: 1200px;
+    overflow: hidden;
   }
 `
 

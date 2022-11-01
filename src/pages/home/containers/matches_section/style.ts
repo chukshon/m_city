@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   background-color: var(--blue-2);
@@ -26,6 +26,7 @@ export const ContainerStyled = styled.div`
   .veiw_all_button {
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
   button {
     margin-top: 50px;
