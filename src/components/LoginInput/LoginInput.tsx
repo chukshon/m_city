@@ -30,6 +30,7 @@ const LoginInput = ({
   return (
     <InputWrapper>
       <InputStyled
+        className={`input ${errors && touched ? "error" : ""}`}
         type={type}
         name={name}
         placeholder={placeholder}
