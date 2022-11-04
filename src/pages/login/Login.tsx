@@ -4,25 +4,31 @@ import { Wrapper, ContainerStyled, FormStyled } from "./style"
 import useLogin from "./useLogin"
 
 const Login = () => {
-  const { loginFormData, handleSubmit, handleChange, LoginFormik } = useLogin()
+  const { LoginFormik } = useLogin()
   return (
     <Wrapper>
       <ContainerStyled>
         <h1>Please Login</h1>
-        <FormStyled onSubmit={handleSubmit}>
+        <FormStyled onSubmit={LoginFormik.handleSubmit}>
           <LoginInput
             type="email"
             placeholder="Please input your email"
             value={LoginFormik.values.email}
             handleChange={LoginFormik.handleChange}
             name="email"
+            errors={LoginFormik.errors.email}
+            touched={LoginFormik.touched.email}
+            onBlur={LoginFormik.handleBlur}
           />
           <LoginInput
             type="password"
             placeholder="Please input your password"
-            value={loginFormData.password}
+            value={LoginFormik.values.password}
             handleChange={LoginFormik.handleChange}
             name="password"
+            errors={LoginFormik.errors.password}
+            touched={LoginFormik.touched.password}
+            onBlur={LoginFormik.handleBlur}
           />
           <button type="submit">Log in</button>
         </FormStyled>

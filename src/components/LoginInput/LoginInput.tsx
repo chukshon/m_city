@@ -1,5 +1,7 @@
-import React from "react"
+import { FormikErrors } from "formik"
+import React, { FocusEvent } from "react"
 import { InputStyled, InputWrapper } from "./style"
+import { LoginFormType } from "../../utils/types"
 
 type Props = {
   type: string
@@ -11,6 +13,9 @@ type Props = {
       | React.ChangeEvent<HTMLSelectElement>
   ) => void
   name: string
+  errors?: string
+  onBlur: (e: FocusEvent<HTMLInputElement>) => void
+  touched?: boolean
 }
 const LoginInput = ({
   type,
@@ -18,6 +23,9 @@ const LoginInput = ({
   placeholder,
   handleChange,
   name,
+  errors,
+  touched,
+  onBlur,
 }: Props) => {
   return (
     <InputWrapper>
@@ -27,8 +35,9 @@ const LoginInput = ({
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
+        onBlur={onBlur}
       />
-      {/* <p>This {name} is Required</p> */}
+      {errors && touched && <p>{errors}</p>}
     </InputWrapper>
   )
 }

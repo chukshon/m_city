@@ -27,6 +27,12 @@ export const FormStyled = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  button {
+    background: #0d1831;
+    color: #ffffff;
+    border: 1px solid #0d1831;
+    height: 40px;
+  }
   /* max-width: 1000px;
   width: 100%; */
 `
