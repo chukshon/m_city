@@ -8,6 +8,9 @@ import Matches from "./pages/matches/Matches"
 import PlayerInfo from "./pages/playerInfo/PlayerInfo"
 import Team from "./pages/team/Team"
 import Login from "./pages/login/Login"
+import AdminPlayers from "./pages/dashboard/Players/AdminPlayers"
+import AdminMatches from "./pages/dashboard/Matches/AdminMatches"
+import Dashboard from "./pages/dashboard/Dashboard"
 
 function App() {
   return (
@@ -16,6 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="dashboard" element={<Dashboard />}>
+          <Route index element={<AdminMatches />} />
+          <Route path="admin-players" element={<AdminPlayers />} />
+        </Route>
         <Route path="/matches" element={<Matches />} />
         <Route path="/team" element={<Team />} />
         <Route path="/player_info/:id" element={<PlayerInfo />} />

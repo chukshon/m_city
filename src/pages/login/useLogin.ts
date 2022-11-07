@@ -15,9 +15,8 @@ function useLogin() {
     validationSchema: LoginSchema,
     onSubmit: handleSubmit,
   })
-
   function handleSubmit(values: LoginFormType, actions: FormikActions) {
-    navigate("/")
+    navigate("/dashboard")
   }
 
   return { LoginFormik }
