@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, Outlet, useNavigate } from "react-router-dom"
-import { Wrapper, SideBarStyled, OutletStyled } from "./style"
+import React from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Wrapper, SideBarStyled, OutletStyled } from "./style";
 
 const Dashboard = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <SideBarStyled>
@@ -16,7 +16,7 @@ const Dashboard = () => {
           </li>
           <li
             onClick={() => {
-              navigate("/login")
+              navigate("/login");
             }}
           >
             Logout
@@ -27,7 +27,7 @@ const Dashboard = () => {
         <Outlet />
       </OutletStyled>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

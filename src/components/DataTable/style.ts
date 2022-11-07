@@ -6,6 +6,14 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { styled } from "@mui/material";
 
+export const Wrapper = styled("div")`
+  .add__button {
+    margin-bottom: 10px;
+  }
+  .load__button {
+    margin-top: 10px;
+  }
+`;
 export const TableContainerStyled = styled(TableContainer)`
   max-height: 500px;
   height: 100%;

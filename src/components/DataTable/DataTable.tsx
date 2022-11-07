@@ -2,6 +2,7 @@ import React from "react";
 import TableBody from "@mui/material/TableBody";
 import Button from "../Button/Button";
 import {
+  Wrapper,
   TableContainerStyled,
   TableStyled,
   TableHeadStyled,
@@ -56,7 +57,7 @@ const DataTable = ({ userData }: Props) => {
     };
   });
   return (
-    <>
+    <Wrapper>
       <div className="add__button">
         <Button primary buttonText="Add Match" />
       </div>
@@ -104,7 +105,7 @@ const DataTable = ({ userData }: Props) => {
       <div className="load__button">
         <Button secondary buttonText="Load Match" />
       </div>
-    </>
+    </Wrapper>
   );
 };
 

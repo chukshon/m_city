@@ -5,10 +5,8 @@ import { Wrapper } from "./style";
 const AdminMatches = () => {
   return (
     <Wrapper>
-      <div className="heading">
-        <h1>The Matches</h1>
-        <DataTable />
-      </div>
+      <h2>The Matches</h2>
+      <DataTable />
     </Wrapper>
   );
 };

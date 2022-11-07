@@ -1,8 +1,14 @@
-import React from "react"
-import { Wrapper } from "./style"
+import React from "react";
+import DataTable from "../../../components/DataTable/DataTable";
+import { Wrapper } from "../Matches/style";
 
 const AdminPlayers = () => {
-  return <Wrapper>Players</Wrapper>
-}
+  return (
+    <Wrapper>
+      <h2>The Players</h2>
+      <DataTable />
+    </Wrapper>
+  );
+};
 
-export default AdminPlayers
+export default AdminPlayers;
