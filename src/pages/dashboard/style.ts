@@ -1,10 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 150px auto;
-  gap: 40px;
-`
+`;
 
 export const SideBarStyled = styled.div`
   min-height: 100vh;
@@ -24,7 +23,7 @@ export const SideBarStyled = styled.div`
     border-bottom: 1px solid #353535;
     padding-bottom: 10px;
   }
-`
+`;
 export const OutletStyled = styled.div`
   margin-top: 100px;
-`
+`;

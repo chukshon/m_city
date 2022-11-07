@@ -1,5 +1,6 @@
 import React from "react";
 import TableBody from "@mui/material/TableBody";
+import Button from "../Button/Button";
 import {
   TableContainerStyled,
   TableStyled,
@@ -12,17 +13,14 @@ import {
 
 type Props = {
   userData?: string[];
-  loading: boolean;
-  success?: boolean;
-  error?: boolean;
 };
 
 const data = [
   {
     id: 1,
     date: "2022-01-01",
-    Home: "Tottenham",
-    Away: "Everton",
+    home: "Tottenham",
+    away: "Everton",
     scoreHome: 1,
     scoreAway: 2,
     played: true,
@@ -39,8 +37,8 @@ const data = [
   {
     id: 3,
     date: "2022-01-01",
-    Home: "Tottenham",
-    Away: "Everton",
+    home: "Tottenham",
+    away: "Everton",
     scoreHome: 1,
     scoreAway: 2,
     played: true,
@@ -58,44 +56,55 @@ const DataTable = ({ userData }: Props) => {
     };
   });
   return (
-    <TableContainerStyled>
-      <TableStyled
-        sx={{ minWidth: 650 }}
-        aria-label="simple table"
-        className="table_styled"
-      >
-        <TableHeadStyled>
-          <TableHeadRowStyled className={"table_head_row"}>
-            {headers.map((item, index) => {
-              return (
-                <TableHeadCellStyled className={"table_head_cell"} key={index}>
-                  <span>
-                    <p>{item}</p>
-                  </span>
-                </TableHeadCellStyled>
-              );
-            })}
-          </TableHeadRowStyled>
-        </TableHeadStyled>
-        <TableBody>
-          {tableData &&
-            tableData.map((row: any, index: any) => (
-              <TableBodyRowStyled key={row.id}>
-                {headers.map((item, index) => {
-                  return (
-                    <TableBodyCellStyled
-                      key={index}
-                      className="table_body_cell"
-                    >
-                      <div>{row[item]}</div>
-                    </TableBodyCellStyled>
-                  );
-                })}
-              </TableBodyRowStyled>
-            ))}
-        </TableBody>
-      </TableStyled>
-    </TableContainerStyled>
+    <>
+      <div className="add__button">
+        <Button primary buttonText="Add Match" />
+      </div>
+      <TableContainerStyled>
+        <TableStyled
+          sx={{ minWidth: 650 }}
+          aria-label="simple table"
+          className="table_styled"
+        >
+          <TableHeadStyled>
+            <TableHeadRowStyled className={"table_head_row"}>
+              {headers.map((item, index) => {
+                return (
+                  <TableHeadCellStyled
+                    className={"table_head_cell"}
+                    key={index}
+                  >
+                    <span>
+                      <p>{item}</p>
+                    </span>
+                  </TableHeadCellStyled>
+                );
+              })}
+            </TableHeadRowStyled>
+          </TableHeadStyled>
+          <TableBody>
+            {tableData &&
+              tableData.map((row: any, index: any) => (
+                <TableBodyRowStyled key={row.id}>
+                  {headers.map((item, index) => {
+                    return (
+                      <TableBodyCellStyled
+                        key={index}
+                        className="table_body_cell"
+                      >
+                        <div>{row[item]}</div>
+                      </TableBodyCellStyled>
+                    );
+                  })}
+                </TableBodyRowStyled>
+              ))}
+          </TableBody>
+        </TableStyled>
+      </TableContainerStyled>
+      <div className="load__button">
+        <Button secondary buttonText="Load Match" />
+      </div>
+    </>
   );
 };
 

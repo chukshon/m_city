@@ -41,7 +41,6 @@ export const TableHeadCellStyled = styled(TableCell)`
     width: max-content;
     font-weight: 800;
   }
-  border: none;
 `;
 
 export const TableBodyStyled = styled(TableBody)`
